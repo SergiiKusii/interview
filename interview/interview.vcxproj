@@ -149,10 +149,13 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Containers.h" />
+    <ClInclude Include="ITestCase.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Containers.cpp" />
     <ClCompile Include="interview.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
