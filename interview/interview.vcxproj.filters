@@ -33,6 +33,15 @@
     <ClInclude Include="TemplateCase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Inheritance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AprioritLinux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="2_test_1_FIXED_Kusii.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -45,6 +54,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TemplateCase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inheritance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AprioritLinux.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

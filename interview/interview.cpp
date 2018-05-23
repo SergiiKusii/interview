@@ -6,11 +6,15 @@
 #include <vector>
 #include <memory>
 #include "Containers.h"
+#include "Inheritance.h"
+#include "AprioritLinux.h"
 
 int main()
 {
 	std::vector<std::unique_ptr<ITestCase>> vTestCases;
-	vTestCases.push_back(std::make_unique<Containers>());
+	//vTestCases.push_back(std::make_unique<Containers>());
+	//vTestCases.push_back(std::make_unique<Inheritance>());
+	vTestCases.push_back(std::make_unique<AprioritLinux>());
 
 	for (auto& pTestCase : vTestCases) {
 		if (pTestCase) {
