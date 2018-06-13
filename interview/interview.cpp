@@ -10,6 +10,7 @@
 #include "Inheritance.h"
 #include "AprioritLinux.h"
 #include "TemplateCase.h"
+#include "AlgorithmsTest.h"
 
 int main()
 {
@@ -17,7 +18,8 @@ int main()
 	//vTestCases.push_back(std::make_unique<Containers>());
 	//vTestCases.push_back(std::make_unique<Inheritance>());
 	//vTestCases.push_back(std::make_unique<AprioritLinux>());
-	vTestCases.push_back(std::make_unique<TemplateCase>());
+	//vTestCases.push_back(std::make_unique<TemplateCase>());
+	vTestCases.push_back(std::make_unique<AlgorithmsTest>());
 
 	for (auto& pTestCase : vTestCases) {
 		if (pTestCase) {

@@ -150,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2_test_1_FIXED_Kusii.h" />
+    <ClInclude Include="AlgorithmsTest.h" />
     <ClInclude Include="AprioritLinux.h" />
     <ClInclude Include="Containers.h" />
     <ClInclude Include="Inheritance.h" />
@@ -159,6 +160,7 @@
     <ClInclude Include="TemplateCase.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AlgorithmsTest.cpp" />
     <ClCompile Include="AprioritLinux.cpp" />
     <ClCompile Include="Containers.cpp" />
     <ClCompile Include="Inheritance.cpp" />
