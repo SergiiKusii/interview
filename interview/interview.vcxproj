@@ -71,12 +71,16 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(CRYPTOPP);$(IncludePath)</IncludePath>
+    <LibraryPath>$(CRYPTOPP)\libs\x32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(CRYPTOPP);$(IncludePath)</IncludePath>
+    <LibraryPath>$(CRYPTOPP)\libs\x32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -93,6 +97,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -119,12 +124,14 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -153,6 +160,7 @@
     <ClInclude Include="AlgorithmsTest.h" />
     <ClInclude Include="AprioritLinux.h" />
     <ClInclude Include="Containers.h" />
+    <ClInclude Include="CryptoppTest.h" />
     <ClInclude Include="Inheritance.h" />
     <ClInclude Include="ITestCase.h" />
     <ClInclude Include="stdafx.h" />
@@ -163,6 +171,7 @@
     <ClCompile Include="AlgorithmsTest.cpp" />
     <ClCompile Include="AprioritLinux.cpp" />
     <ClCompile Include="Containers.cpp" />
+    <ClCompile Include="CryptoppTest.cpp" />
     <ClCompile Include="Inheritance.cpp" />
     <ClCompile Include="interview.cpp" />
     <ClCompile Include="stdafx.cpp" />

@@ -3,3 +3,5 @@ interview.VC.VC.opendb
 Debug/
 .vs/
 interview/interview.vcxproj.user
+interview/Release/
+Release/

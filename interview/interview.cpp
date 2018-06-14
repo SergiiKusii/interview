@@ -11,6 +11,7 @@
 #include "AprioritLinux.h"
 #include "TemplateCase.h"
 #include "AlgorithmsTest.h"
+#include "CryptoppTest.h"
 
 int main()
 {
@@ -19,7 +20,8 @@ int main()
 	//vTestCases.push_back(std::make_unique<Inheritance>());
 	//vTestCases.push_back(std::make_unique<AprioritLinux>());
 	//vTestCases.push_back(std::make_unique<TemplateCase>());
-	vTestCases.push_back(std::make_unique<AlgorithmsTest>());
+	//vTestCases.push_back(std::make_unique<AlgorithmsTest>());
+	vTestCases.push_back(std::make_unique<CryptoppTest>());
 
 	for (auto& pTestCase : vTestCases) {
 		if (pTestCase) {
