@@ -1,6 +1,8 @@
 #include "CryptoppTest.h"
 #include <iostream>
 
+#ifdef _USE_CRYPTO_
+
 #include "Cryptopp\filters.h"
 #include "Cryptopp\hex.h"
 #include "Cryptopp\modes.h"
@@ -86,3 +88,9 @@ void CryptoppTest::Run()
 	}
 }
 
+#else
+void CryptoppTest::Run()
+{
+	std::cout << "Crypto is not used" << std::endl;
+}
+#endif
